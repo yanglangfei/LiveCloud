@@ -9,10 +9,13 @@ import com.duanqu.qupai.auth.QupaiAuthListener;
 import com.duanqu.qupai.httpfinal.QupaiHttpFinal;
 import com.duanqu.qupai.jni.ApplicationGlue;
 
+import cn.bmob.v3.Bmob;
+
 /**
  * Created by administrator on 2016/6/13.
  */
 public class App extends Application {
+    private String appkey="fc331473a8c37895b2d8eed13aa2b88a";
 
 //    @Override
 //    protected void attachBaseContext(Context base) {
@@ -29,6 +32,10 @@ public class App extends Application {
         ApplicationGlue.initialize(this);
         QupaiHttpFinal.getInstance().initOkHttpFinal();
         initAuth(getApplicationContext(), Contants.appkey, Contants.appsecret, Contants.space);
+    }
+
+    public void initBmobPush(){
+        Bmob.initialize(this,appkey);
     }
 
 
