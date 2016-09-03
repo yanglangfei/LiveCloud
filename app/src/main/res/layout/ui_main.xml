@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Message"
+            android:button="@null"
+            android:gravity="center"
+            android:id="@+id/chat_history"
+            android:layout_height="match_parent"
+            />
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Contact"
+            android:button="@null"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            />
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Setting"
+            android:button="@null"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            />
+    </RadioGroup>
+
+</LinearLayout>

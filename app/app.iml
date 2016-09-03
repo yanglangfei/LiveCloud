@@ -81,6 +81,7 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.0/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.0/jars" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/org.xutils/xutils/3.3.36/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/jacoco" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/javaResources" />
@@ -100,23 +101,25 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="support-core-utils-24.2.0" level="project" />
     <orderEntry type="library" exported="" name="okio-1.7.0" level="project" />
+    <orderEntry type="library" exported="" name="BmobNewIM_2.0.5_20160601" level="project" />
     <orderEntry type="library" exported="" name="appcompat-v7-24.2.0" level="project" />
     <orderEntry type="library" exported="" name="support-fragment-24.2.0" level="project" />
     <orderEntry type="library" exported="" name="animated-vector-drawable-24.2.0" level="project" />
-    <orderEntry type="library" exported="" name="okhttp-3.2.0" level="project" />
     <orderEntry type="library" exported="" name="rxjava-1.1.6" level="project" />
     <orderEntry type="library" exported="" name="rxandroid-1.2.0" level="project" />
+    <orderEntry type="library" exported="" name="xutils-3.3.36" level="project" />
     <orderEntry type="library" exported="" name="support-v4-24.2.0" level="project" />
     <orderEntry type="library" exported="" name="BmobSDK_3.5.1_20160719" level="project" />
     <orderEntry type="library" exported="" name="okhttp-3.3.1" level="project" />
-    <orderEntry type="library" exported="" name="gson-2.6.2" level="project" />
     <orderEntry type="library" exported="" name="support-compat-24.2.0" level="project" />
+    <orderEntry type="library" exported="" name="gson-2.7" level="project" />
     <orderEntry type="library" exported="" name="support-core-ui-24.2.0" level="project" />
+    <orderEntry type="library" exported="" name="androidasync-2.1.6" level="project" />
     <orderEntry type="library" exported="" name="Bmob_Push_V1.0.0beta_20160627" level="project" />
-    <orderEntry type="library" exported="" name="okio-1.6.0" level="project" />
     <orderEntry type="library" exported="" name="support-vector-drawable-24.2.0" level="project" />
     <orderEntry type="library" exported="" name="support-media-compat-24.2.0" level="project" />
     <orderEntry type="library" exported="" name="support-annotations-24.2.0" level="project" />
+    <orderEntry type="library" exported="" name="glide-3.7.0" level="project" />
     <orderEntry type="module" module-name="QupaiLiveSDK-release1.0.0" exported="" />
     <orderEntry type="library" exported="" name="QupaiLiveSDK-release1.0.0-unspecified" level="project" />
   </component>
