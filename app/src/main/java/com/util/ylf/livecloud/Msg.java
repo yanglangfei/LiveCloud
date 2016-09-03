@@ -7,6 +7,16 @@ import cn.bmob.v3.BmobObject;
  */
 public class Msg extends BmobObject {
 
+    private  int msgType;
+    private  String fromName;
+
+    private  String toName;
+
+    private  String fromFace;
+
+
+    private  String toFace;
+
 
     private  int id;
 
@@ -15,6 +25,46 @@ public class Msg extends BmobObject {
     private  int fromId;
 
     private  int toId;
+
+    public int getMsgType() {
+        return msgType;
+    }
+
+    public void setMsgType(int msgType) {
+        this.msgType = msgType;
+    }
+
+    public String getFromName() {
+        return fromName;
+    }
+
+    public void setFromName(String fromName) {
+        this.fromName = fromName;
+    }
+
+    public String getToName() {
+        return toName;
+    }
+
+    public void setToName(String toName) {
+        this.toName = toName;
+    }
+
+    public String getFromFace() {
+        return fromFace;
+    }
+
+    public void setFromFace(String fromFace) {
+        this.fromFace = fromFace;
+    }
+
+    public String getToFace() {
+        return toFace;
+    }
+
+    public void setToFace(String toFace) {
+        this.toFace = toFace;
+    }
 
     public int getId() {
         return id;

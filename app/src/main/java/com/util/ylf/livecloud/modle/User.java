@@ -13,6 +13,16 @@ public class User extends BmobObject{
     private  String password;
     private  String state;
 
+    private  String faceImage;
+
+    public String getFaceImage() {
+        return faceImage;
+    }
+
+    public void setFaceImage(String faceImage) {
+        this.faceImage = faceImage;
+    }
+
     public User() {
     }
 

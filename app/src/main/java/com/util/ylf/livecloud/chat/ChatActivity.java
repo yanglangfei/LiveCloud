@@ -17,10 +17,13 @@ import android.widget.EditText;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
+import com.util.ylf.livecloud.Msg;
 import com.util.ylf.livecloud.R;
+import com.util.ylf.livecloud.adapter.MsgAdapter;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -44,8 +47,11 @@ public class ChatActivity extends Activity implements RadioGroup.OnCheckedChange
     private RadioGroup group;
     private GridView gv_emb;
     private EditText et_input;
+    private ListView lv_chat;
 
     private Button btn_send;
+
+    private MsgAdapter msgAdapter;
 
     private ExpressAdapter expressAdapter;
 
@@ -56,6 +62,7 @@ public class ChatActivity extends Activity implements RadioGroup.OnCheckedChange
 
 
     private List<Express> expresses = new ArrayList<>();
+    private  List<Msg> msgList=new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -187,7 +194,22 @@ public class ChatActivity extends Activity implements RadioGroup.OnCheckedChange
         gv_emb.setAdapter(expressAdapter);
         et_input = (EditText) findViewById(R.id.et_input);
         btn_send = (Button) findViewById(R.id.btn_send);
+        lv_chat= (ListView) findViewById(R.id.lv_chat);
+        msgAdapter=new MsgAdapter(msgList,this);
+        lv_chat.setAdapter(msgAdapter);
+
+
+
+
+
+
+
+
         btn_send.setOnClickListener(this);
+
+
+
+
 
         group.setOnCheckedChangeListener(this);
         gv_emb.setOnItemClickListener(new AdapterView.OnItemClickListener() {

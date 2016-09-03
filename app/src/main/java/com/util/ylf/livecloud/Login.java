@@ -9,7 +9,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.util.ylf.livecloud.base.Regin;
-import com.util.ylf.livecloud.chat.ChatMain;
+import com.util.ylf.livecloud.chat.ChatActivity;
 import com.util.ylf.livecloud.modle.User;
 
 import java.util.List;
@@ -74,7 +74,7 @@ public class Login extends Activity implements View.OnClickListener {
                         public void done(String s, BmobException e) {
                             if (e == null) {
                                 Toast.makeText(Login.this, "登录成功", Toast.LENGTH_SHORT).show();
-                                startActivity(new Intent(Login.this, ChatMain.class));
+                                startActivity(new Intent(Login.this, ChatActivity.class));
                                 changeState(1,id);
                             } else {
                                 changeState(0,id);

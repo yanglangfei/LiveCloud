@@ -20,6 +20,17 @@ public class MyApplication extends Application {
 
     private String appkey="fc331473a8c37895b2d8eed13aa2b88a";
 
+    private static MyApplication INSTANCE;
+    public static MyApplication INSTANCE(){
+        return INSTANCE;
+    }
+    private void setInstance(MyApplication app) {
+        setBmobIMApplication(app);
+    }
+    private static void setBmobIMApplication(MyApplication a) {
+        MyApplication.INSTANCE = a;
+    }
+
     @Override
     public void onCreate() {
         super.onCreate();
